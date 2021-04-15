@@ -1,0 +1,9 @@
+<p>myc05 works!</p>
+<div>
+  <input [(ngModel)]="src" type="text" name="" id="" />
+  <button (click)="add()">添加</button>
+</div>
+<ul *ngFor="let item of arr; let index = index" style="display: flex">
+  <li>{{ index }}{{ item }}</li>
+  <div (click)="delete(index)">刪除</div>
+</ul>
